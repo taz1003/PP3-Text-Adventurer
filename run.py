@@ -28,10 +28,17 @@ def start():
         print("Invalid choice. Let's start over")
         start()
 
+def enter_dungeon():
+    print("You stand at the entrance of the dungeon as cold wind rushes through you.")
+    print("You tighten your grip on your sword and you step inside.")
+
+
+
 def main():
     """
     Runs all game functions
     """
     game_introduction()
+    enter_dungeon()
 
 main()
