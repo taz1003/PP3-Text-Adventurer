@@ -28,4 +28,10 @@ def start():
         print("Invalid choice. Let's start over")
         start()
 
-game_introduction()
+def main():
+    """
+    Runs all game functions
+    """
+    game_introduction()
+
+main()
