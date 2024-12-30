@@ -17,13 +17,14 @@ def start():
     """
     Gives the player a choice to start the game or not.
     """
-    choice = input("Do you want to be the Hero? (y/n) ")
+    choice = input("Do you want to be the Hero? (y/n) ").lower()
     if choice == "n":
         print("You somehow close the book and walk away. Perhaps another day!")
         quit()
     elif choice == "y":
-        print("You accept your destiny. The townspeople cheer as you prepare to enter the dungeon.")
-        print("Your adventure begins now!")
+        print("You accept your destiny as the townspeople cheer wildly!")
+        name = input("They ask you your name which is: ")
+        print(f"Oh ye mighty Hero {name}, your adventure begins now!")
     else:
         print("Invalid choice. Let's start over")
         start()
@@ -32,6 +33,16 @@ def enter_dungeon():
     print("You stand at the entrance of the dungeon as cold wind rushes through you.")
     print("You tighten your grip on your sword and you step inside.")
 
+
+def confirm_quit():
+    confirmation = input("Do you wish to quit your destiny? (y/n) ")
+    if confirmation == "n":
+        print("You chose not to give up.")
+    elif confirmation == "y":
+        print("You turn away from your destiny, perhaps another one shall rise..")
+    else:
+        print("Invalid choice. Let's try again")
+        confirm_quit()
 
 
 def main():
