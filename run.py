@@ -40,6 +40,7 @@ def confirm_quit():
         print("You chose not to give up.")
     elif confirmation == "y":
         print("You turn away from your destiny, perhaps another one shall rise..")
+        quit()
     else:
         print("Invalid choice. Let's try again")
         confirm_quit()
